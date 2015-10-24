@@ -1,0 +1,377 @@
+@font-face {
+  font-family: 'fuentes';
+		  
+		  src: 
+		    url('../fonts/ARCADECLASSIC.ttf')  format('truetype')
+		}
+	*
+	{
+		margin: 0;
+		padding: 0;
+		
+	}
+	body
+	{
+		font-family: 'fuentes',sans-serif;
+		letter-spacing: .5em;
+	}
+	a 
+	{
+		text-decoration: none;
+		font-size: 2em;
+	}
+	.mario 
+	{
+		height: 135px;
+		width: 63px;
+		background-image: url(../imagenes/mario.png);
+		position: absolute;
+		top: 71%;
+		left: 50%;
+	}
+	.fondo 
+	{
+		width: 100%;
+	}
+	.fondo img 
+	{
+		width: 100%;
+    	height:680px;
+	}
+	.contenedor 
+	{
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+	.titulo-cont 
+	{
+		background: #d54b00;
+	    width: 600px;
+	    margin: auto;
+	    padding: 5px;
+	    position: relative;
+	    top: 55px;
+	}
+	.titulo-main
+	{
+		font-size: 5em;
+	    font-weight: 500;
+	    color: #FEC2BA;
+	}
+	#bloques 
+	{
+		margin-top: -55px;
+	}
+	#bloques a 
+	{
+		cursor: default;
+	}
+	#bloques div
+	{
+		display: inline-block;
+		margin: 70px;
+	}
+	.bloque 
+	{
+		width: 55px;
+	}
+	.bloque img
+	{
+		width: 100%;
+	}
+	.coin 
+	{
+		cursor: pointer;
+	}
+	.bloque .nombre 
+	{
+		width: 155px;
+		position: relative;
+    	left: -125px;
+	}
+	.bloque .nombre img 
+	{
+		width: 100%;
+	}
+	.animar
+	{
+		animation: caminar 5s 1;
+		-webkit-animation: caminar 5s 1;
+	}
+
+	@keyframes caminar
+	{
+		0%
+		{
+			transform: translate(0, 0); 
+		}
+		100%
+		{
+			transform: translate(500px);
+		}
+	}
+	#dk section 
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.dk_fondo  
+	{	
+		width: 45%;
+	}
+	.dk_fondo img 
+	{
+		width: 102%;
+	}
+	#dk .informacion
+	{
+		width: 54%;
+		text-align: center;
+		color: white;
+    	background: black;
+	}
+	.dk_fondo iframe
+	{
+		background: black;
+	}
+	#titulo 
+	{
+		font-size: 3em;
+	}
+	.envio 
+	{
+		font-size: 2em;
+	    padding: 10px;
+	    margin: 10px;
+	    border: none;
+	    background: royalblue;
+	    color: white;
+	    width: 200px;
+	    font-family: 'fuentes';
+	    cursor: pointer;
+	}
+	#dk input 
+	{
+		border: none;
+	    background: transparent;
+	    border-bottom: 2px solid white;
+	    font-size: 2em;
+	    color: white;	
+	}
+	#dk input:focus
+	{
+		outline: none;
+	} 
+	#dk textarea 
+	{
+		width: 500px;
+	}
+	.calificacion 
+	{
+		font-size: 3em;
+	    background: #4040E6;
+	    width: 100px;
+	    margin: auto;
+	    padding: 15px;
+	    border: 2px solid white;
+	    color: white;
+	}
+	.coment
+	{
+		font-size: 1.5em;
+	}
+	.regresar 
+	{
+	    text-align: right;
+	    font-size: 2em;
+	    cursor: pointer;
+	    color: green;
+	    width: 200px;
+	    margin-top: 130px;
+	    padding: 35px;
+	}
+	.reiniciar-form
+	{
+		font-size: 1.9em;
+	    padding: 10px;
+	    background: #4040E6;
+	    border: none;
+	    color: white;
+	    font-family: 'fuentes';
+	    cursor: pointer;
+	}
+	#megaman section 
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.megaman_fondo  
+	{	
+		width: 45%;
+	}
+	.megaman_fondo img 
+	{
+		width: 102%;
+	}
+	#megaman iframe
+	{
+		background: black;
+	}
+	#megaman .ver_imagenes
+	{
+		border: none;
+	    padding: 10px;
+	    color: white;
+	    font-family: 'fuentes';
+	    font-size: 1.5em;
+	    background:#4040E6;
+	    margin: 20px;
+	    cursor: pointer;
+	}
+	#megaman .botones 
+	{
+		width: 100%;
+	}
+	#megaman .botones button 
+	{
+		display: inline-block;
+		width: 45%;
+	}
+	#megaman .oculta_imagenes
+	{
+		border: none;
+	    padding: 10px;
+	    color: white;
+	    font-family: 'fuentes';
+	    font-size: 1.5em;
+	    background:#4040E6;
+	    margin: 20px;
+	    cursor: pointer;
+	}
+	#megaman .imagenes figure 
+	{
+		display: inline-block;
+
+	}
+	#megaman .formulario h1 
+	{
+		font-size: 2em;
+	}
+	#megaman label 
+	{
+		font-size: 1.5em;
+	}
+	#megaman .informacion
+	{
+		width: 54%;
+		text-align: center;
+		background: black;
+		color: white;
+	}
+	#megaman .informacion figure 
+	{
+		width: 50%;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+	#megaman .informacion figure img 
+	{
+		width: 100%;
+	}
+	#megaman .puntos 
+	{
+		font-size: 3em;
+	}
+	#megaman .calculo 
+	{
+		font-size: 2em;
+	    padding: 10px;
+	    background: #4040E6;
+	    border: none;
+	    color: white;
+	    font-family: 'fuentes';
+	    cursor: pointer;
+	}
+	#megaman .correcto 
+	{
+		display: none;
+		font-size: 3em;
+	}
+	#megaman .incorrecto 
+	{
+		display: none;
+		font-size: 3em;
+	}
+	#megaman input 
+	{
+		width: 300px;
+	    font-size: 2em;
+	    margin: 10px;
+	    border: none;
+	    font-family: 'fuentes';
+	}
+	#megaman select 
+	{
+		width: 300px;
+	    font-size: 2em;
+	    margin: 10px;
+	    border: none;	
+	    font-family: 'fuentes';
+	}
+	#metroid section 
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.poderes div 
+	{
+		cursor: pointer;
+		transition:all .5s ease;
+	}
+	.poderes div:hover
+	{
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+	} 
+	.poderes div 
+	{
+		display: inline-block;
+		width: 45%;
+		margin: 15px;
+	}
+	.metroid_fondo  
+	{	
+		width: 45%;
+	}
+	textarea
+	{
+		resize: none;
+	}
+	.metroid_fondo img 
+	{
+		width: 102%;
+	}
+	#metroid .informacion
+	{
+		width: 53%;
+	    text-align: center;
+	    background: black;
+	    color: white;
+	    padding: 5px;
+	}
+	.informacion h2 
+	{
+		font-size: 1.2em;
+	}
+	#metroid iframe 
+	{
+		background: black;
+	}
+	input
+	{
+		font-family: 'fuentes',sans-serif;
+	}
+	

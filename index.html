@@ -1,0 +1,77 @@
+<!-- Author: Ricardo Gonzalez 
+	Taller de AngularJS
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body >
+	<section class="main">
+		<section class="contenedor">
+			<div class="titulo-cont">
+				<h1 class="titulo-main">AngularJS</h1>
+			</div>
+			<section id="bloques">
+				<a href="#dk">
+					<div class="bloque dk">
+						<div class="nombre">
+							<img src="imagenes/dk_titulo.png" alt="">
+						</div>
+						<img class="coin" src="imagenes/bloque.png" alt="">
+					</div>
+				</a>
+				<a href="#metroid">
+					<div class="bloque metroid">
+						<div class="nombre">
+							<img src="imagenes/metroid_titulo.png" alt="">
+						</div>
+						<img  class="coin" src="imagenes/bloque.png" alt="">
+					</div>
+				</a>
+				<a href="#megaman">
+					<div class="bloque megaman">
+						<div class="nombre">
+							<img src="imagenes/megaman_titulo.png" alt="">
+						</div>
+						<img class="coin" src="imagenes/bloque.png" alt="">
+					</div>
+				</a>	
+			</section>
+		</section>
+		<div class="mario"></div>
+		
+		<!-- autoplay loop -->	
+		<audio autoplay loop>
+			<source src="audio/tema.mp3"></source>
+		</audio>
+		<audio class="moneda-sonido">
+			<source src="audio/moneda.wav"></source>	
+		</audio>
+
+		<div class="fondo">
+			<img  src="imagenes/fondo.png" alt="">
+		</div>	
+	</section>
+	
+
+
+	<ng-view></ng-view>
+	<!-- Jquery y plugin de animacion -->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/jquery.spritely.js">
+	</script>
+	<!-- ANGULAR -->
+	<script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-local-storage.min.js"></script>
+    <!-- Controladores de Angular -->
+    <script src="js/controladores/MainController.js"></script>
+    <script src="js/controladores/DkController.js"></script>
+    <script src="js/controladores/MetroidController.js"></script>
+    <script src="js/controladores/MegamanController.js"></script>
+    <script src="js/rutas.js"></script>
+</body>
+</html>
